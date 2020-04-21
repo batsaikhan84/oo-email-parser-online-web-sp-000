@@ -10,6 +10,6 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses.split(",").collect {|element| element.strip}
+    @email_addresses.split("," || " ").collect {|element| element.strip}
   end
 end
